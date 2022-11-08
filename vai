@@ -1,3 +1,11 @@
-import pandas as pd
-imports numpy as np
-ser1=sereis
+line_df=df.groupby(by=["Horsepower"])
+line_df=line_df.mean()
+import matplotlib.pyplot as plt
+fig=plt.figure(figsize=[3,3])
+ax=fig.add_axes([0,0,1,1])
+plt.plot(df['Horsepower'],df['EngineSize'],label='EngineSize')
+ax.set_title("variation in EngineSize")
+ax.set_ylabel("EngineSize",fontsize=12)
+ax.set_xlabel("Horsepower",fontsize=12)
+ax.legend()
+fig.show()
