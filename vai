@@ -1,3 +1,4 @@
 import pandas as pd
 imports numpy as np
-ser1=sereis
+ser1=[1,2,3,4]
+print(ser)
